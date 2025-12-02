@@ -1,0 +1,86 @@
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #b24c80; 
+}
+
+table,
+td,
+th {
+    border: solid 2px #f4cce3; 
+    border-collapse: collapse;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+td,
+th {
+    padding: 12px;
+}
+
+tr:first-child {
+    background: #f7d9eb;
+    color: #6b3460; 
+    font-weight: bold;
+}
+
+tr:not(:first-child):not(.selected):hover {
+    background-color: #faeef5; 
+}
+
+.selected {
+    background-color: #fff4da;
+}
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+#inputPanel {
+    border: 2px dashed #e6aacd;
+    background: #fcf4f9; 
+    margin: 1.5em 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputLabel {
+    width: 120px;
+    float: left;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    color: #a85d8b; 
+}
+
+#buttonPanel {
+    margin: 0.6em 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#menuItems {
+    margin-top: 2em;
+}
+
+button {
+    background: #eab6d3; 
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #dba3c3; 
+}
+
+button:disabled {
+    background: #817f81;
+    color: #ffffffaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
