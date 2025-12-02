@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Brittany and Brooke's Diner</title>
+    <link rel="stylesheet" href="gui.css" />
+    <script src="gui.js" defer></script>
+  </head>
+  <body>
+    <h1>Brittany and Brooke's Diner</h1>
+
+    <div id="buttonPanelTop">
+      <button id="addButton">Add</button>
+      <button id="updateButton" disabled>Update</button>
+      <button id="deleteButton" disabled>Delete</button>
+    </div>
+
+    <div id="inputPanel" class="hidden">
+      <div class="inputControl">
+        <div class="inputLabel">ID</div>
+        <input id="idInput" type="number" />
+      </div>
+      <div class="inputControl">
+        <div class="inputLabel">Category</div>
+        <input id="categoryInput" />
+      </div>
+      <div class="inputControl">
+        <div class="inputLabel">Description</div>
+        <input id="descriptionInput" />
+      </div>
+      <div class="inputControl">
+        <div class="inputLabel">Price</div>
+        <input id="priceInput" type="number" />
+      </div>
+      <div class="inputControl">
+        <div class="inputLabel">Vegetarian</div>
+        <input id="vegetarianInput" type="checkbox" />
+      </div>
+
+      <div id="buttonPanelBottom">
+        <button id="doneButton">Done</button>
+        <button id="cancelButton">Cancel</button>
+      </div>
+    </div>
+
+    <div id="menuItems"></div>
+  </body>
+</html>
