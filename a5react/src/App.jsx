@@ -1,9 +1,9 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { useState } from "react";
-import { ButtonPanel } from "./components/ButtonPanel";
-import { MenuTable } from "./components/MenuTable";
-import { AddUpdatePanel } from "./components/AddUpdatePanel";
+import { ButtonPanel } from "./components/ButtonPanel.jsx";
+import { MenuTable } from "./components/MenuTable.jsx";
+import { AddUpdatePanel } from "./components/AddUpdatePanel.jsx";
 
 function App() {
     const BASE_DATA_URL = "http://localhost:8000/menuitems";
@@ -165,7 +165,7 @@ function App() {
     return (
         <div className="container">
             <button
-                className="btn btn-outline-success btn-lg float-end"
+                className="btn btn-outline-success btn-lg"
                 onClick={handleLoadClick}
             >
                 Load Menu from Source

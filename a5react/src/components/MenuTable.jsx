@@ -1,7 +1,7 @@
 
 export function MenuTable({ menuItems, tableClickHandler, selectedItem}){
     return (
-        <table className='table table-striped table-hover'>
+        <table className='table table-hover'>
             <thead>
                 <tr>
                     <th>ID</th>
@@ -22,7 +22,7 @@ export function MenuTable({ menuItems, tableClickHandler, selectedItem}){
                                 <td>{item.id}</td>
                                 <td>{item.category}</td>
                                 <td>{item.description}</td>
-                                <td>{item.price}</td>
+                                <td>${item.price}</td>
                                 <td>{item.vegetarian ? "Yes" : "No"}</td>
                             </tr>
 
