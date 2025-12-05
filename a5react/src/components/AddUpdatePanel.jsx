@@ -8,13 +8,13 @@ export function AddUpdatePanel({
   cancelClickHandler,
 }) {
 
-    
+
     return (
         <form>
             
             <div className='mb-2'>
                 <label>ID</label>
-                <input type='number' value={panelItem?.id || ""} name='id' onChange={(e) => inputChangeHandler('id', e.target.value)}></input>
+                <input type='number' value={panelItem?.id || ""} name='id' min='100' max='999' onChange={(e) => inputChangeHandler('id', e.target.value)}></input>
             </div>
             <div className='mb-2'>
                 <label>Category</label>
